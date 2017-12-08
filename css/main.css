@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+/* menú hamburguesa */
+.main-hamburger {
+    background-color: #d0d0d0;
+    height: 2px;
+    position: absolute;
+    right: 28px;
+    top: 25px;
+    widows: 24px;
+}
+
+.main-hamburger::before, .main-hamburger::after {
+    background-color: #d0d0d0;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    widows: 24px;
+}
+
+.main-hamburger::before {
+    top: -8px;
+}
+
+.main-hamburger::after {
+    top: 8px;
+}
+/* fin de menú hamburguesa */
+
+.bg-reverse {
+    background-color: #383e42;
+    color: #fff;
+}
+
+a {
+    color: #ddd;
+    font-size: inherit;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #fff;
+}
+
+nav {
+    padding: 14px;
+    overflow: hidden;
+}
+
+.nav-left {
+    font-size: 1.25rem;
+    float: left;
+    padding-left: 35px;
+}
+
+.nav-right {
+    float: right;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-header {
+    background-image: url('../assets/images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+} 
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5rem 0;
+}
+
+.text.rock, figure {
+    align-self: center;
+    color: #393939;
+    display: inline-block;
+    padding: 3rem 4.5rem;
+}
+
+.text.rock p {
+    line-height: 1.5;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 100%;
+}
+
+footer {
+    padding: 3rem;
+}
+
+.col-section {
+    width: 100%;
+}
+
+.view-mobile {
+    display: block;
+}
+
+.view-desktop {
+    display: none;
+}
+
+/* estilos solo para desktop */
+ul li {
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+@media (min-width: 768px) {
+    .col-section {
+        float: left;
+        width: 50%;
+    }
+
+    section {
+        display: flex;
+        overflow: auto;
+    }
+
+    .text.rock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .overlay {
+        padding: 10rem 0;
+    }
+
+    .view-mobile {
+        display: none;
+    }
+
+    .view-desktop {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        margin: 0 10rem;
+    }
+}
